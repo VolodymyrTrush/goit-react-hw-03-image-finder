@@ -1,16 +1,13 @@
-import PropTypes from 'prop-types';
-import styles from './Button.module.scss';
-
-const Button = ({ onClick }) => (
-  <div className={styles['Button-wrapper']}>
-    <button type="button" className={styles.Button} onClick={onClick}>
+import propTypes from 'prop-types';
+import './Button.css';
+export const Button = ({ onClick }) => {
+  return (
+    <button type="button" className="Button" onClick={onClick}>
       Load more
     </button>
-  </div>
-);
-
-Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  );
 };
 
-export default Button;
+Button.propTypes = {
+  onClick: propTypes.func.isRequired,
+};
