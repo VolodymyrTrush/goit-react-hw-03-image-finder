@@ -13,6 +13,6 @@ axios.defaults.params = {
 const imagesApi = ({ searchQuery = '', currentPage = 1 }) => {
 	return axios.get('', { params: { q: searchQuery, page: currentPage } }).then((response) => response.data.hits);
 };
-export { imagesApi };
+export default imagesApi ;
 
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { imagesApi } from './services/api';
+import imagesApi from '../services/api';
 
-import Searchbar from './components/Searchbar';
-import ImageGallery from './components/ImageGallery';
-import Button from './components/Button';
-import Loader from './components/Loader';
-import Modal from './components/Modal';
+import Searchbar from './Searchbar';
+import ImageGallery from './ImageGallery';
+import Button from './Button';
+import Loader from './Loader';
+import Modal from './Modal';
 
-import styles from './components/Style.module.css';
+import styles from '../components/Style.module.css';
 
 class App extends Component {
 	state = {
