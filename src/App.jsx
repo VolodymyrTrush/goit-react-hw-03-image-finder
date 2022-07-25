@@ -1,5 +1,5 @@
 import { Component } from "react";
-import * as API from 'service/imgApi';
+import * as API from 'service1/imgApi';
 import { SearchBar} from "./components/SearchBar/SearchBar";
 import { AppStyled } from "./components/App.container";
 import { Button } from "./components/Button/Button";
